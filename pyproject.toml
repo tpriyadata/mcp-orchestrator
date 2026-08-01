@@ -1,0 +1,31 @@
+[project]
+name = "mcp-orchestrator"
+version = "0.1.0"
+description = "Production-ready MCP orchestration framework for multi-cloud enterprise integration"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "anthropic",
+    "mcp",
+    "pydantic>=2.0",
+    "python-dotenv",
+    "pyyaml",
+    "azure-identity",
+    "azure-mgmt-resource",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "ruff",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
