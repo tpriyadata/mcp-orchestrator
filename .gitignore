@@ -1,0 +1,31 @@
+﻿# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets / credentials
+.env
+.env.*
+*.key
+*.pem
+azure_credentials.json
+aws_credentials.json
+gcp_service_account.json
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
+
+# Logs
+*.log
